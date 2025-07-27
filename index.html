@@ -3,84 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shantanu P Patil | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Shantanu P Patil - Video Editor Portfolio</title>
   <style>
-    * {
+    body {
+      background-color: #111;
+      color: #f5d76e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-    body {
-      background-color: #0d0d0d;
-      color: #fff;
+      text-align: center;
     }
     header {
-      background: linear-gradient(to right, #1a1a1a, #262626);
-      padding: 30px;
-      text-align: center;
+      padding: 2rem 1rem 0.5rem 1rem;
     }
-    header h1 {
+    h1 {
       font-size: 2.8rem;
-      color: #e0b973;
+      margin: 0;
+      color: #f5d76e;
     }
-    header p {
+    p {
       font-size: 1.2rem;
       color: #ccc;
-      margin-top: 10px;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      padding: 50px;
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 2rem 1rem;
     }
-    .video-card {
-      background: #1a1a1a;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease;
+    .project {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 200px;
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.1);
     }
-    .video-card:hover {
-      transform: scale(1.03);
-    }
-    .video-card img {
+    .project img {
       width: 100%;
-      height: auto;
-      display: block;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
     }
-    .video-card h3 {
-      padding: 15px;
-      font-size: 1rem;
-      color: #e0b973;
+    .project a {
+      text-decoration: none;
+      color: #f5d76e;
+      font-weight: bold;
     }
-    .youtube-section {
-      background: #141414;
-      padding: 60px 20px;
-      text-align: center;
+    .youtube {
+      margin-top: 3rem;
     }
-    .youtube-section h2 {
-      margin-bottom: 30px;
-      font-size: 1.8rem;
-      color: #e0b973;
-    }
-    .youtube-section iframe {
-      width: 100%;
-      max-width: 720px;
+    iframe {
+      width: 80%;
       height: 400px;
       border: none;
     }
     footer {
-      background: #121212;
-      color: #ccc;
-      text-align: center;
-      padding: 40px;
-    }
-    footer a {
-      color: #e0b973;
-      text-decoration: none;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
@@ -90,48 +70,48 @@
     <p>Creative Video Editor | Adobe Premiere Pro Specialist | Crafting Emotion Through Every Cut</p>
   </header>
 
-  <section class="gallery">
-    <div class="video-card">
-      <a href="https://drive.google.com/file/d/1toSX6nQDqO611iuL4F6PLZM-ZkoDAGPe/view?usp=drive_link" target="_blank">
+  <section class="portfolio">
+    <div class="project">
+      <a href="https://drive.google.com/file/d/1nxYOZ5LI6Y2IAumclamLwm4ErIJ-higG/view">
         <img src="https://drive.google.com/uc?export=view&id=1nxYOZ5LI6Y2IAumclamLwm4ErIJ-higG" alt="One last time Thumbnail" />
-        <h3>One Last Time</h3>
+        One Last Time
       </a>
     </div>
-    <div class="video-card">
-      <a href="https://drive.google.com/file/d/1AQ8_GUtjc56zpqLrB6e6SP1lG4Iw8Htf/view?usp=drive_link" target="_blank">
+    <div class="project">
+      <a href="https://drive.google.com/file/d/176j0q_uV_vUDg6jxRFaCE9WFja9DNLH3/view">
         <img src="https://drive.google.com/uc?export=view&id=176j0q_uV_vUDg6jxRFaCE9WFja9DNLH3" alt="Trailer Thumbnail" />
-        <h3>Trailer</h3>
+        Trailer
       </a>
     </div>
-    <div class="video-card">
-      <a href="https://drive.google.com/file/d/1Osf7fGz_ORiFNCtVJUYmUQQzbjgZrHdB/view?usp=sharing" target="_blank">
+    <div class="project">
+      <a href="https://drive.google.com/file/d/1Y_zKKhOLhjwB2-2VPvRUXDMYnbkFgsNp/view">
         <img src="https://drive.google.com/uc?export=view&id=1Y_zKKhOLhjwB2-2VPvRUXDMYnbkFgsNp" alt="Those Last Days Thumbnail" />
-        <h3>Those Last Days</h3>
+        Those Last Days
       </a>
     </div>
-    <div class="video-card">
-      <a href="https://drive.google.com/file/d/1VXcn6KDXUZ9mhr27ztx3wd9xLPLVr4lN/view?usp=drive_link" target="_blank">
+    <div class="project">
+      <a href="https://drive.google.com/file/d/1MQqU96RP4mrUSKpAlDP2aIwMfSxM6OXy/view">
         <img src="https://drive.google.com/uc?export=view&id=1MQqU96RP4mrUSKpAlDP2aIwMfSxM6OXy" alt="Parliament Trailer Thumbnail" />
-        <h3>Parliament Trailer</h3>
+        Parliament Trailer
       </a>
     </div>
-    <div class="video-card">
-      <a href="https://drive.google.com/file/d/19XYGwTxF94u_1-6O8nhdkYM7tOnuA1kK/view?usp=drive_link" target="_blank">
+    <div class="project">
+      <a href="https://drive.google.com/file/d/1uW6Kv0PlOTx73Te3kOzKXdbgC6LH_abg/view">
         <img src="https://drive.google.com/uc?export=view&id=1uW6Kv0PlOTx73Te3kOzKXdbgC6LH_abg" alt="Kokan Diaries Thumbnail" />
-        <h3>Kokan Diaries</h3>
+        Kokan Diaries
       </a>
     </div>
   </section>
 
-  <section class="youtube-section">
+  <section class="youtube">
     <h2>Watch My YouTube Work</h2>
     <iframe src="https://www.youtube.com/embed/FSlEDcGs4ec" allowfullscreen></iframe>
   </section>
 
   <footer>
-    <p><strong>Email:</strong> <a href="mailto:shantanupatil274114@gmail.com">shantanupatil274114@gmail.com</a></p>
+    <p><strong>Email:</strong> shantanupatil274114@gmail.com</p>
     <p><strong>Phone:</strong> +91 99223 94465</p>
-    <p>&copy; 2025 Shantanu P Patil | All Rights Reserved</p>
+    <p>&copy; 2025 Shantanu Patil. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
