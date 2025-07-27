@@ -1,93 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shantanu Patil | Video Editor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f4;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #0f0f0f;
+      color: white;
     }
     header {
-      background-color: #222;
-      color: white;
-      padding: 20px;
+      background: #1e1e1e;
+      padding: 20px 40px;
       text-align: center;
     }
-    h1 {
-      margin: 0;
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1rem;
+      color: #aaa;
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      padding: 20px;
+      padding: 40px;
     }
     .video-card {
-      background-color: white;
-      border-radius: 10px;
+      background: #1c1c1c;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease;
     }
     .video-card:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
-    .thumbnail {
+    .video-card img {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
+      height: auto;
+      cursor: pointer;
     }
-    .caption {
-      padding: 15px;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    .btn {
-      display: block;
-      text-align: center;
-      margin: 20px;
+    .video-card a {
       text-decoration: none;
-      color: white;
-      background-color: #007bff;
-      padding: 10px 20px;
-      border-radius: 5px;
+      display: block;
+    }
+    footer {
+      background: #141414;
+      color: #ccc;
+      padding: 40px;
+      text-align: center;
+    }
+    footer p {
+      margin: 8px 0;
+    }
+    .youtube-section {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #191919, #121212);
+    }
+    .youtube-section h2 {
+      margin-bottom: 20px;
+    }
+    .youtube-section iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 400px;
+      border: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My Professional Video Portfolio</h1>
-    <p>Click thumbnails to watch videos on Google Drive</p>
+    <h1>Shantanu Patil</h1>
+    <p>Freelance Video Editor | Crafting Visual Stories Frame by Frame</p>
   </header>
 
-  <div class="gallery">
+  <section class="gallery">
     <div class="video-card">
-      <a href="https://drive.google.com/file/d/1toSX6nQDqO611iuL4F6PLZM-ZkoDAGPe/view?usp=sharing" target="_blank">
-        <img src="762612dc-7eb3-4b0d-9221-e3ce86f97360.png" alt="One Last Time" class="thumbnail">
+      <a href="https://drive.google.com/file/d/1TfJH8IdDqCK5kJjkmWIoGxu0uOcEqHSl/view?usp=drive_link" target="_blank">
+        <img src="https://drive.google.com/uc?export=view&id=1hK5b0H3M7_hPhKHvo2mlQTugNSNqEF6Y" alt="Video 1 Thumbnail" />
       </a>
-      <div class="caption">One Last Time</div>
     </div>
-
     <div class="video-card">
-      <a href="https://drive.google.com/file/d/1AQ8_GUtjc56zpqLrB6e6SP1lG4Iw8Htf/view?usp=drive_link" target="_blank">
-        <img src="fe72a7ae-0078-4bfa-8a27-78d7ddb5ae47.png" alt="Trailer" class="thumbnail">
+      <a href="https://drive.google.com/file/d/1pHOd4LTrFt35rXeA4WUrkG1yqysrLXYl/view?usp=sharing" target="_blank">
+        <img src="https://drive.google.com/uc?export=view&id=1UgfRjQsb39RO86jJ03n9qovqR3UedqZP" alt="Video 2 Thumbnail" />
       </a>
-      <div class="caption">Trailer</div>
     </div>
-
     <div class="video-card">
-      <a href="https://drive.google.com/file/d/1Osf7fGz_ORiFNCtVJUYmUQQzbjgZrHdB/view?usp=drive_link" target="_blank">
-        <img src="5c036da9-41f5-4d15-9978-34f387501cba.png" alt="LAST" class="thumbnail">
+      <a href="https://drive.google.com/file/d/1fP7qNFp-dOSq8JcPMzz3WxDZYAfJ3Iio/view?usp=sharing" target="_blank">
+        <img src="https://drive.google.com/uc?export=view&id=1XrMLP1zJRYcEKpEIo36W10NXYkM_TjOf" alt="Video 3 Thumbnail" />
       </a>
-      <div class="caption">LAST</div>
     </div>
-  </div>
+    <div class="video-card">
+      <a href="https://drive.google.com/file/d/1gL9c2fw1xZEvWnhdzcfHgcru8voGnIyk/view?usp=sharing" target="_blank">
+        <img src="https://drive.google.com/uc?export=view&id=1_OEOQH9X0ap6bmmdC2umTMLR-0OP2gkR" alt="Video 4 Thumbnail" />
+      </a>
+    </div>
+  </section>
 
-  <a href="https://drive.google.com/drive/folders/1yQv6dngPLZbgtzRZ6Ze0Q3-exMbS4fDz?usp=drive_link" class="btn" target="_blank">View Full Portfolio on Drive</a>
+  <section class="youtube-section">
+    <h2>Watch My YouTube Work</h2>
+    <iframe src="https://www.youtube.com/embed/QUf8fPRi5OI" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p><strong>Email:</strong> <a href="mailto:shantanupatil274114@gmail.com">shantanupatil274114@gmail.com</a></p>
+    <p><strong>Phone:</strong> +91 99223 94465</p>
+    <p>&copy; 2025 Shantanu Patil | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
