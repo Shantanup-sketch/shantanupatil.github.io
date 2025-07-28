@@ -4,44 +4,41 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Shantanu P Patil - Video Editor Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
   body {
     background-color: #111;
     color: #f5d76e;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
   }
   header {
-    padding: 2rem 1rem 0.5rem;
+    padding: 2rem 1rem 1rem;
   }
   h1 {
     font-size: 2.8rem;
     margin: 0;
+    font-weight: 700;
     color: #f5d76e;
   }
-  p {
+  .tagline {
     font-size: 1.2rem;
     color: #ccc;
+    margin-top: 0.5rem;
   }
-  
-  /* About Me Section */
-  .about {
-    background: #1a1a1a;
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(245, 215, 110, 0.2);
-  }
-  .about h2 {
-    color: #f5d76e;
-    margin-bottom: 1rem;
-  }
-  .about p {
-    color: #ddd;
+  .about-text {
     font-size: 1rem;
+    color: #ddd;
+    margin-top: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
   }
   
   /* Portfolio Section */
@@ -71,7 +68,7 @@
   .project a {
     text-decoration: none;
     color: #f5d76e;
-    font-weight: bold;
+    font-weight: 600;
   }
   
   /* YouTube Section */
@@ -90,16 +87,6 @@
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(245, 215, 110, 0.2);
-  }
-  .yt-thumbnail::after {
-    content: "▶";
-    font-size: 3rem;
-    color: gold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.85;
   }
   .yt-video {
     display: none;
@@ -122,13 +109,11 @@
 
 <header>
   <h1>Shantanu P Patil</h1>
-  <p>Creative Video Editor | Adobe Premiere Pro Specialist | Crafting Emotion Through Every Cut</p>
+  <div class="tagline">Creative Video Editor | Adobe Premiere Pro Specialist</div>
+  <div class="about-text">
+    I’m a passionate freelance video editor specializing in Adobe Premiere Pro. My work focuses on crafting visually captivating stories with precision and creativity. Every cut, transition, and frame is carefully tailored to evoke emotion and keep the audience engaged.
+  </div>
 </header>
-
-<section class="about">
-  <h2>About Me</h2>
-  <p>I’m a passionate freelance video editor specializing in Adobe Premiere Pro. My work focuses on crafting visually captivating stories with precision and creativity. Every cut, transition, and frame is carefully tailored to evoke emotion and keep the audience engaged.</p>
-</section>
 
 <section class="portfolio">
   <div class="project">
@@ -166,7 +151,7 @@
 <section class="youtube">
   <h2>Watch My YouTube Work</h2>
   <div class="yt-thumbnail" onclick="playVideo()">
-    <img src="YOUR_CROPPED_GOLD_PLAY_IMAGE_LINK" alt="YouTube Thumbnail">
+    <img src="YOUR_CLEAN_MUN_IMAGE_LINK" alt="YouTube Thumbnail">
   </div>
   <div class="yt-video" id="ytVideo">
     <iframe src="https://www.youtube.com/embed/FSlEDcGs4ec?autoplay=1" allowfullscreen></iframe>
