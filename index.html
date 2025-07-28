@@ -53,7 +53,7 @@
     background-color: #1a1a1a;
     border-radius: 10px;
     padding: 0.5rem;
-    width: 260px; /* bigger thumbnail */
+    width: 260px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .project:hover {
@@ -68,14 +68,15 @@
   .project a {
     text-decoration: none;
     color: #f5d76e;
-    font-size: 0.8rem; /* smaller font */
+    font-size: 0.8rem;
     font-weight: 400;
   }
   
   /* YouTube Section */
   .youtube {
     margin: 3rem auto;
-    max-width: 800px; /* slightly bigger container */
+    max-width: 800px;
+    position: relative;
   }
   .youtube h2 {
     margin-bottom: 1rem;
@@ -85,21 +86,31 @@
     position: relative;
     cursor: pointer;
     display: inline-block;
-    width: 90%; /* bigger thumbnail */
+    width: 90%;
   }
   .yt-thumbnail img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(245, 215, 110, 0.2);
+    display: block;
   }
-  .yt-thumbnail::after {
-    content: "▶";
-    font-size: 3rem; /* decent bigger icon */
-    color: rgba(245, 215, 110, 0.9);
+  .play-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .play-icon svg {
+    width: 40px;
+    height: 40px;
+    fill: #f5d76e;
   }
   .yt-video {
     display: none;
@@ -165,6 +176,11 @@
   <h2>Watch My YouTube Work</h2>
   <div class="yt-thumbnail" onclick="playVideo()">
     <img src="https://drive.google.com/uc?export=view&id=YOUR_MUN_IMAGE_ID" alt="YouTube Thumbnail">
+    <div class="play-icon">
+      <svg viewBox="0 0 64 64">
+        <polygon points="16,12 52,32 16,52" />
+      </svg>
+    </div>
   </div>
   <div class="yt-video" id="ytVideo">
     <iframe src="https://www.youtube.com/embed/FSlEDcGs4ec?autoplay=1" allowfullscreen></iframe>
