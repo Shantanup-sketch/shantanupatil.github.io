@@ -46,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
     padding: 2rem 1rem;
   }
   .project {
@@ -76,6 +76,7 @@
   .youtube {
     margin: 3rem auto;
     max-width: 900px;
+    padding: 0 1rem;
   }
   .youtube h2 {
     margin-bottom: 1rem;
@@ -109,6 +110,39 @@
     font-size: 0.85rem;
     color: #aaa;
     padding-bottom: 1rem;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+    .about-text {
+      font-size: 0.85rem;
+      padding: 0 10px;
+    }
+    .portfolio {
+      flex-direction: column;
+      align-items: center;
+    }
+    .project {
+      width: 90%;
+    }
+    iframe {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    .about-text {
+      font-size: 0.8rem;
+    }
+    iframe {
+      height: 200px;
+    }
   }
 </style>
 </head>
