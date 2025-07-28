@@ -21,18 +21,18 @@
     padding: 2rem 1rem 1rem;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin: 0;
     font-weight: 600;
     color: #f5d76e;
   }
   .tagline {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #ccc;
     margin-top: 0.5rem;
   }
   .about-text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #ddd;
     margin-top: 1rem;
     max-width: 700px;
@@ -53,7 +53,7 @@
     background-color: #1a1a1a;
     border-radius: 10px;
     padding: 0.5rem;
-    width: 240px;
+    width: 260px; /* bigger thumbnail */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .project:hover {
@@ -63,12 +63,12 @@
   .project img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
   }
   .project a {
     text-decoration: none;
     color: #f5d76e;
-    font-size: 0.85rem;
+    font-size: 0.8rem; /* smaller font */
     font-weight: 400;
   }
   
@@ -84,11 +84,21 @@
   .yt-thumbnail {
     position: relative;
     cursor: pointer;
+    display: inline-block;
   }
   .yt-thumbnail img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(245, 215, 110, 0.2);
+  }
+  .yt-thumbnail::after {
+    content: "▶";
+    font-size: 2.5rem; /* decent size icon */
+    color: rgba(245, 215, 110, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .yt-video {
     display: none;
@@ -101,7 +111,7 @@
   
   footer {
     margin-top: 2rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #aaa;
     padding-bottom: 1rem;
   }
@@ -153,7 +163,7 @@
 <section class="youtube">
   <h2>Watch My YouTube Work</h2>
   <div class="yt-thumbnail" onclick="playVideo()">
-    <img src="https://i.ibb.co/YpRkHnW/mun-thumbnail.jpg" alt="YouTube Thumbnail">
+    <img src="https://i.ibb.co/pKdQJ0L/mun-clean-thumbnail.jpg" alt="YouTube Thumbnail">
   </div>
   <div class="yt-video" id="ytVideo">
     <iframe src="https://www.youtube.com/embed/FSlEDcGs4ec?autoplay=1" allowfullscreen></iframe>
